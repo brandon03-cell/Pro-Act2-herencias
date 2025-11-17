@@ -1,21 +1,27 @@
+package Articulos;
+
 public class Libro extends Articulo {
     private String autor;
     private int numPaginas;
-    private enum Genero {
+    public enum Genero {
         MISTERIO,
         TERROR,
         ACCION,
         HISTORIA,
         FANTASIA
     }
-
-    public Libro(String titulo, int anyoLanzamiento, double precioPorDia, String autor, int numPaginas) {
+    //Esto de "private Genero genero" me dió muchísimos problemas
+    private Genero genero;
+//Todos los constructores
+    public Libro(String titulo, int anyoLanzamiento, double precioPorDia, String autor, int numPaginas, Genero genero) {
         super(titulo, anyoLanzamiento, precioPorDia);
         this.autor = autor;
-        this.numPaginas = 100;
+        this.numPaginas = numPaginas;
+        this.genero = genero;
     }
 
-    public Libro() {
+    public Libro(String titulo, int anyoLanzamiento, double precioPorDia) {
+        super(titulo, anyoLanzamiento, precioPorDia);
     }
 
     public String getAutor() {
@@ -34,8 +40,12 @@ public class Libro extends Articulo {
         this.numPaginas = numPaginas;
     }
 
-    public boolean esLargo() {
-        return numPaginas > 200;
+    public Genero getGenero() {
+        return genero;
+    }
+
+    public void setGenero(Genero genero) {
+        this.genero = genero;
     }
 
     @Override

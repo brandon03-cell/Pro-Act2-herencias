@@ -1,17 +1,19 @@
+package Articulos;
+//Tambien dentro de la carpeta de Articulo
 public class Articulo {
     private String titulo;
     private int anyoLanzamiento;
     private double precioPorDia;
-
+//Todos los constructores
     public Articulo(String titulo, int anyoLanzamiento, double precioPorDia) {
         this.titulo = titulo;
         this.anyoLanzamiento = anyoLanzamiento;
         this.precioPorDia = precioPorDia;
     }
-
+//Constructor vacío
     public Articulo() {
     }
-
+//getters and setters
     public String getTitulo() {
         return titulo;
     }
@@ -35,11 +37,11 @@ public class Articulo {
     public void setPrecioPorDia(double precioPorDia) {
         this.precioPorDia = precioPorDia;
     }
-
+//formula para calcular el precio total dependiendo de el número artículos por un número de días
     public double calcularPrecio(int numArticulos, int dias) {
         return (this.precioPorDia * numArticulos * dias);
     }
-
+//metodo toString
     @Override
     public String toString() {
         return "[Articulo] " + this.titulo + " (" +  this.precioPorDia + " €/día";
