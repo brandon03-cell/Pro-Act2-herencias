@@ -1,4 +1,5 @@
 package Articulos;
+
 //Perteneciente a la carpeta de Articulos
 public class AlbumMusica extends Articulo {
     private String Autor;
