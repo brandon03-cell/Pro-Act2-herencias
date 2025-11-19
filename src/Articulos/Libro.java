@@ -20,8 +20,9 @@ public class Libro extends Articulo {
         this.genero = genero;
     }
 
-    public Libro(String titulo, int anyoLanzamiento, double precioPorDia) {
+    public Libro(String titulo, int anyoLanzamiento, double precioPorDia, Genero genero) {
         super(titulo, anyoLanzamiento, precioPorDia);
+        this.numPaginas = 100;
     }
 
     public String getAutor() {
@@ -46,6 +47,10 @@ public class Libro extends Articulo {
 
     public void setGenero(Genero genero) {
         this.genero = genero;
+    }
+
+    public boolean esLargo() {
+        return this.numPaginas > 200;
     }
 
     @Override

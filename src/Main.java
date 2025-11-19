@@ -13,10 +13,10 @@ public class Main {
         System.out.println(Libro1);
         System.out.println(Libro2);
 
-        AlbumMusica musica1 = new AlbumMusica("Un verano sin ti", 2022, 69.69, "Bad Bunny", 23, false);
-        AlbumMusica musica2 = new AlbumMusica("Unorthodox Jukebox", 2012, 100.69, "Bruno Mars", 10, false);
-        System.out.println(musica1);
-        System.out.println(musica2);
+        AlbumMusica albumMusica1 = new AlbumMusica("Un verano sin ti", 2022, 69.69, "Bad Bunny", 23, false);
+        AlbumMusica albumMusica2 = new AlbumMusica("Unorthodox Jukebox", 2012, 100.69, "Bruno Mars", 10, false);
+        System.out.println(albumMusica1);
+        System.out.println(albumMusica2);
 
 
         Pelicula peli1 = new Pelicula("Avatar", 2009, 12.0, "James Cameron", 160);
