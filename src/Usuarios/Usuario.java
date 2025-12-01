@@ -47,6 +47,10 @@ public class Usuario {
     public void setAnyoNacimiento(int anyoNacimiento) {
         this.anyoNacimiento = anyoNacimiento;
     }
+
+    public void saludo() {
+        System.out.println("Hola soy " + this.getNombreUsuario() + " y nací en " + this. getAnyoNacimiento());
+    }
 //resta para calcular la edad y comparar el resultado si es mayor o igual que 18
     public boolean esAdulto() {
         return (2025 - this.anyoNacimiento) >=18;

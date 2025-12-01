@@ -6,13 +6,15 @@ public class AlbumMusica extends Articulo {
     private int numCanciones;
     private boolean single;
 //Todos los constructores
-    public AlbumMusica(String titulo, int anyoLanzamiento, double precioPorDia, String autor, int numCanciones, boolean single) {
-        super(titulo, anyoLanzamiento, precioPorDia);
+
+    public AlbumMusica(String titulo, int anyoLanzamiento, double precioPorDia, String descripcion, String autor, int numCanciones, boolean single) {
+        super(titulo, anyoLanzamiento, precioPorDia, descripcion);
         Autor = autor;
         this.numCanciones = numCanciones;
         this.single = single;
     }
-//Constructor vacío
+
+    //Constructor vacío
     public AlbumMusica() {
     }
 //getters and setters
